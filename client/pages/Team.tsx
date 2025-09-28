@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 type Member = {
   role: string;
@@ -6,6 +7,35 @@ type Member = {
   blurb?: string;
   contact?: string;
 };
+
+function slugify(s: string) {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function AvatarImg({ slug, name }: { slug: string; name: string }) {
+  const sources = [
+    `/team/${slug}/avatar.webp`,
+    `/team/${slug}/avatar.png`,
+    `/team/${slug}/avatar.jpg`,
+    `/team/${slug}/avatar.jpeg`,
+    `/team/${slug}/avatar.svg`,
+    "/placeholder.svg",
+  ];
+  const [idx, setIdx] = useState(0);
+  return (
+    <img
+      src={sources[idx]}
+      alt={`${name} portrait`}
+      onError={() => setIdx((i) => Math.min(i + 1, sources.length - 1))}
+      className="mx-auto mb-3 h-16 w-16 rounded-full object-cover ring-1 ring-white/10"
+      loading="lazy"
+      decoding="async"
+    />
+  );
+}
 
 export default function Team() {
   const members: Member[] = [
@@ -90,30 +120,34 @@ export default function Team() {
           {members.map((m) => (
             <motion.div
               key={`${m.role}-${m.name}`}
-              initial={{ opacity: 0, y: 12 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="group relative rounded-xl border border-white/10 bg-black/30 p-6 text-center"
+              className="group perspective"
             >
-              <div className="pointer-events-none absolute -inset-px rounded-xl bg-gradient-to-b from-cyan-500/30 to-transparent opacity-0 blur-[2px] transition-opacity duration-300 group-hover:opacity-100" />
-              <div className="relative">
-                <div className="mx-auto mb-3 h-16 w-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-500/20 ring-1 ring-white/10" />
-                <div className="text-sm text-muted-foreground">{m.role}</div>
-                <div className="mt-1 text-base font-semibold">{m.name}</div>
-                {m.blurb && (
-                  <p className="mt-2 text-xs text-muted-foreground">
-                    {m.blurb}
-                  </p>
-                )}
-                {m.contact && (
-                  <a
-                    href={`mailto:${m.contact}`}
-                    className="mt-3 inline-block text-xs font-medium text-primary hover:underline"
-                  >
-                    {m.contact}
-                  </a>
-                )}
+              <div className="relative preserve-3d rounded-xl border border-white/10 bg-black/30 p-6 text-center transition-transform duration-500 group-hover:rotate-y-180">
+                <div className="pointer-events-none absolute -inset-px rounded-xl bg-gradient-to-b from-cyan-500/30 to-transparent opacity-0 blur-[2px] transition-opacity duration-300 group-hover:opacity-100" />
+                {/* Front */}
+                <div className="relative backface-hidden">
+                  <AvatarImg slug={slugify(m.name)} name={m.name} />
+                  <div className="text-sm text-muted-foreground">{m.role}</div>
+                  <div className="mt-1 text-base font-semibold">{m.name}</div>
+                </div>
+                {/* Back */}
+                <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-xl p-6">
+                  {m.blurb && (
+                    <p className="mt-2 text-xs text-muted-foreground">{m.blurb}</p>
+                  )}
+                  {m.contact && (
+                    <a
+                      href={`mailto:${m.contact}`}
+                      className="mt-3 inline-block text-xs font-medium text-primary hover:underline"
+                    >
+                      {m.contact}
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

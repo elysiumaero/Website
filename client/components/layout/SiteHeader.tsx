@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "@/components/ui/theme-toggle";
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -15,10 +16,13 @@ export default function SiteHeader() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="group inline-flex items-center gap-3">
-            <div className="relative h-8 w-8">
-              <span className="absolute inset-0 rounded-md bg-gradient-to-br from-cyan-400 via-sky-500 to-violet-500 blur-[2px]" />
-              <span className="relative block h-full w-full rounded-md bg-black ring-1 ring-white/20" />
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fb7cfa890298e4417b2c764b6d4f2183e%2F3c80e911b0ff4190961f2744d5f0e49e?format=webp&width=200"
+              alt="Elysium Aerotech logo"
+              className="h-8 w-auto thruster-glow"
+              loading="eager"
+              decoding="async"
+            />
             <div className="leading-tight">
               <div className="text-base font-semibold tracking-tight">
                 Elysium Aerotech
@@ -39,15 +43,19 @@ export default function SiteHeader() {
             <NavLink to="/team" className={navLinkClass}>
               Team
             </NavLink>
+            <NavLink to="/collaborators" className={navLinkClass}>
+              Collaborators
+            </NavLink>
             <NavLink to="/contact" className={navLinkClass}>
               Contact
             </NavLink>
             <Link
               to="/contact"
-              className="ml-2 inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110 hover:scale-[1.03] active:scale-[0.98]"
+              className="ml-2 inline-flex items-center rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
             >
               Get in touch
             </Link>
+            <ThemeToggle />
           </nav>
 
           <button
@@ -103,6 +111,13 @@ export default function SiteHeader() {
               Team
             </NavLink>
             <NavLink
+              to="/collaborators"
+              className={navLinkClass}
+              onClick={() => setOpen(false)}
+            >
+              Collaborators
+            </NavLink>
+            <NavLink
               to="/contact"
               className={navLinkClass}
               onClick={() => setOpen(false)}
@@ -112,10 +127,13 @@ export default function SiteHeader() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110"
+              className="mt-2 inline-flex items-center rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110"
             >
               Get in touch
             </Link>
+            <div className="pt-2">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       )}

@@ -8,6 +8,7 @@ export default function Index() {
       <TrustedBy />
       <Features />
       <Prototype />
+      <Progress />
       <Applications />
       <Roadmap />
       <CTA />
@@ -231,6 +232,50 @@ function Prototype() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Progress() {
+  const stages = [
+    { k: "Research", v: 80, color: "from-cyan-400 to-sky-500" },
+    { k: "Prototype", v: 60, color: "from-violet-400 to-fuchsia-500" },
+    { k: "Testing", v: 20, color: "from-blue-400 to-indigo-500" },
+  ];
+  return (
+    <section>
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Project Stages</h2>
+          <p className="mt-2 text-muted-foreground">Transparent progress across our build lifecycle.</p>
+        </div>
+        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+          {stages.map((s) => (
+            <motion.div
+              key={s.k}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-xl border border-white/10 bg-black/30 p-5"
+            >
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">{s.k}</span>
+                <span className="font-semibold">{s.v}%</span>
+              </div>
+              <div className="mt-2 h-2 w-full rounded-full bg-white/10">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${s.v}%` }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.9 }}
+                  className={`h-2 rounded-full bg-gradient-to-r ${s.color}`}
+                />
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

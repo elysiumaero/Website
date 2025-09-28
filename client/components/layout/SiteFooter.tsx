@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-black/40">
+    <footer className="relative border-t border-white/10 bg-black/40 overflow-hidden">
+      <div aria-hidden className="starfield absolute inset-0 -z-10 opacity-25" />
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-4 flex items-center justify-end">
           <a
