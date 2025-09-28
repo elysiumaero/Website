@@ -88,7 +88,7 @@ export default function Team() {
     },
     {
       role: "Assistant Finance Executive",
-      name: "Riya Agarwal",
+      name: "Riya Bansal",
       blurb: "Manages accounts operations, invoices, and reporting cadence.",
     },
     {
