@@ -6,7 +6,7 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-4 flex items-center justify-end">
           <a
-            href="https://elysiumlaunch.netlify.app/"
+            href="https://elysiumaero.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-muted-foreground underline decoration-dotted hover:text-foreground"
