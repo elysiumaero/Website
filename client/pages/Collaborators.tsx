@@ -16,7 +16,7 @@ export default function Collaborators() {
             <svg className="h-6 w-6 text-muted-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14"/></svg>
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fb7cfa890298e4417b2c764b6d4f2183e%2Fa79366ccd98c45218d292c9ffd31789e?format=webp&width=300"
-              alt="Vivekananda Institute of Professional Studies (VIPS) logo"
+              alt="Vivekananda Institute of Professional Studies (VIPS) - Technology Campus logo"
               className="h-16 w-auto"
               loading="eager"
               decoding="async"
@@ -28,7 +28,7 @@ export default function Collaborators() {
           </h1>
           <p className="mt-3 text-sm font-medium text-primary">
             In academic collaboration with Vivekananda Institute of Professional
-            Studies (VIPS), New Delhi
+            Studies (VIPS) - Technology Campus, New Delhi
           </p>
           <p className="mt-4 text-base text-muted-foreground">
             Elysium Aerotech proudly collaborates with forward-thinking
@@ -46,18 +46,18 @@ export default function Collaborators() {
           <div className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-br from-cyan-500/20 to-violet-500/20 opacity-60" />
           <div className="relative space-y-4 text-sm leading-relaxed text-foreground/90">
             <p>
-              Vivekananda Institute of Professional Studies (VIPS), New Delhi is associated with Elysium Aerotech as our academic partner, playing a vital role in nurturing student innovation and providing institutional guidance for our aerospace initiatives.
+              Vivekananda Institute of Professional Studies (VIPS) - Technology Campus, New Delhi is associated with Elysium Aerotech as our academic partner, playing a vital role in nurturing student innovation and providing institutional guidance for our aerospace initiatives.
             </p>
             <p>
               Our flagship project, Elysium, has been nurtured with the academic
-              support and incubation environment provided by VIPS. Students and
-              mentors from VIPS have contributed to research, discussions, and
+              support and incubation environment provided by VIPS - TC. Students and
+              mentors from VIPS - TC have contributed to research, discussions, and
               innovation pathways that make our aerospace projects a reality.
             </p>
             <p>
               Elysium Aerotech believes in the power of collaboration and
               knowledge-sharing. We are proud to be associated with Vivekananda
-              Institute of Professional Studies (VIPS), New Delhi, a premier
+              Institute of Professional Studies (VIPS) - Technology Campus, New Delhi, a premier
               institute that supports innovation and entrepreneurship.
             </p>
           </div>

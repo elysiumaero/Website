@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { NewsletterSignup } from "@/components/ui/newsletter-signup";
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
       <Progress />
       <Applications />
       <Roadmap />
+      <Newsletter />
       <CTA />
     </div>
   );
@@ -49,16 +51,16 @@ function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                to="/technology"
+                to="/elysium"
                 className="inline-flex items-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110 hover:scale-[1.03] active:scale-[0.98]"
               >
-                Explore our tech
+                Explore Elysium
               </Link>
               <Link
-                to="/contact"
+                to="/technology"
                 className="inline-flex items-center rounded-md px-6 py-3 text-sm font-semibold ring-1 ring-inset ring-white/15 text-foreground/90 hover:bg-white/5 transition hover:scale-[1.03] active:scale-[0.98]"
               >
-                Get updates
+                Technology
               </Link>
             </div>
           </motion.div>
@@ -372,6 +374,16 @@ function Roadmap() {
   );
 }
 
+function Newsletter() {
+  return (
+    <section>
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <NewsletterSignup />
+      </div>
+    </section>
+  );
+}
+
 function CTA() {
   return (
     <section className="relative">
@@ -381,11 +393,10 @@ function CTA() {
           <div className="relative grid items-center gap-6 sm:grid-cols-2">
             <div>
               <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
-                Be first to know when we fly
+                Have questions or want to collaborate?
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Join our early updates and we will share key milestones,
-                behind‑the‑scenes, and flight test results.
+                Get in touch with the Elysium team for partnerships, inquiries, or to learn more about our aerospace initiative.
               </p>
             </div>
             <div className="flex justify-end">
@@ -393,7 +404,7 @@ function CTA() {
                 to="/contact"
                 className="inline-flex items-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110 hover:scale-[1.03] active:scale-[0.98]"
               >
-                Contact Elysium Aerotech
+                Contact Us
               </Link>
             </div>
           </div>

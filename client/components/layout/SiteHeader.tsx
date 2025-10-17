@@ -30,7 +30,7 @@ export default function SiteHeader() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1 overflow-x-auto">
             <NavLink to="/" className={navLinkClass} end>
               Home
             </NavLink>
@@ -40,20 +40,32 @@ export default function SiteHeader() {
             <NavLink to="/technology" className={navLinkClass}>
               Technology
             </NavLink>
+            <NavLink to="/elysium" className={navLinkClass}>
+              Elysium
+            </NavLink>
             <NavLink to="/team" className={navLinkClass}>
               Team
+            </NavLink>
+            <NavLink to="/gallery" className={navLinkClass}>
+              Gallery
+            </NavLink>
+            <NavLink to="/blog" className={navLinkClass}>
+              Blog
             </NavLink>
             <NavLink to="/collaborators" className={navLinkClass}>
               Collaborators
             </NavLink>
-            <NavLink to="/contact" className={navLinkClass}>
-              Contact
+            <NavLink to="/faq" className={navLinkClass}>
+              FAQ
+            </NavLink>
+            <NavLink to="/careers" className={navLinkClass}>
+              Careers
             </NavLink>
             <Link
               to="/contact"
               className="ml-2 inline-flex items-center rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
             >
-              Get in touch
+              Contact
             </Link>
             <ThemeToggle />
           </nav>
@@ -104,11 +116,32 @@ export default function SiteHeader() {
               Technology
             </NavLink>
             <NavLink
+              to="/elysium"
+              className={navLinkClass}
+              onClick={() => setOpen(false)}
+            >
+              Elysium
+            </NavLink>
+            <NavLink
               to="/team"
               className={navLinkClass}
               onClick={() => setOpen(false)}
             >
               Team
+            </NavLink>
+            <NavLink
+              to="/gallery"
+              className={navLinkClass}
+              onClick={() => setOpen(false)}
+            >
+              Gallery
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className={navLinkClass}
+              onClick={() => setOpen(false)}
+            >
+              Blog
             </NavLink>
             <NavLink
               to="/collaborators"
@@ -118,18 +151,25 @@ export default function SiteHeader() {
               Collaborators
             </NavLink>
             <NavLink
-              to="/contact"
+              to="/faq"
               className={navLinkClass}
               onClick={() => setOpen(false)}
             >
-              Contact
+              FAQ
+            </NavLink>
+            <NavLink
+              to="/careers"
+              className={navLinkClass}
+              onClick={() => setOpen(false)}
+            >
+              Careers
             </NavLink>
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex items-center rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm ring-1 ring-inset ring-white/10 transition hover:brightness-110"
             >
-              Get in touch
+              Contact
             </Link>
             <div className="pt-2">
               <ThemeToggle />

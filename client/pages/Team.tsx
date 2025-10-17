@@ -53,10 +53,10 @@ export default function Team() {
         "Oversees the engineering roadmap, systems architecture, and cross‑team technical execution.",
     },
     {
-      role: "Technical Project Manager",
+      role: "Associate Director",
       name: "Sanvi Vig",
       blurb:
-        "Drives planning, delivery, and cross‑functional coordination across avionics and airframe workstreams.",
+        "Directs technical strategy and cross‑functional coordination across avionics and airframe workstreams.",
     },
     {
       role: "Assistant Project Manager",
@@ -65,16 +65,16 @@ export default function Team() {
         "Supports project tracking, documentation, and operational workflows for engineering teams.",
     },
     {
-      role: "Deputy Technical Director",
+      role: "Technical Project Manager",
       name: "Vishwas Khandelwal",
       blurb:
-        "Guides subsystem design reviews and ensures quality standards across hardware and software.",
+        "Manages project delivery, milestones, and coordination between hardware and software subsystems.",
     },
     {
-      role: "Avionics Engineer",
+      role: "Deputy Technical Officer",
       name: "Abdullah Munawwar Khan",
       blurb:
-        "Designs and integrates flight‑critical avionics, telemetry, and on‑board compute.",
+        "Designs and integrates flight‑critical avionics, telemetry, and on‑board compute systems.",
     },
     {
       role: "Finance & Operations Head",

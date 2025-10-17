@@ -14,6 +14,30 @@ export default function Technology() {
       title: "Secure Avionics",
       desc: "Encrypted telemetry, redundant links, and safe‑state behaviors for assured command and control.",
     },
+    {
+      title: "Lightweight Composite Airframe",
+      desc: "Advanced materials and modular design optimized for maximum endurance, payload capacity, and field repair.",
+    },
+    {
+      title: "Redundant Power Systems",
+      desc: "Multi‑battery architecture with automatic failover and extended flight time through efficient power distribution.",
+    },
+    {
+      title: "Edge Computing Platform",
+      desc: "Onboard compute stack running inference and decision‑making algorithms without cloud dependency.",
+    },
+    {
+      title: "Precision Navigation",
+      desc: "Multi‑sensor fusion (IMU, magnetometer, barometer) for accurate positioning and attitude control.",
+    },
+    {
+      title: "Long‑Range Communication",
+      desc: "Encrypted RF links with extended range and anti‑jamming capabilities for tactical operations.",
+    },
+    {
+      title: "Modular Payload Bay",
+      desc: "Quick‑swap sensor integration supporting cameras, LIDAR, and custom mission equipment.",
+    },
   ];
 
   return (
@@ -28,7 +52,7 @@ export default function Technology() {
             autonomy—built to adapt mid‑mission without cloud dependency.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {features.map((f) => (
             <motion.div
               key={f.title}
