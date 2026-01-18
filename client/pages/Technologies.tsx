@@ -1,11 +1,11 @@
 import { AppLayout } from "@/layouts/AppLayout";
-import { ContactSection } from "@/components/ContactSection";
+import { CoreTechnologies } from "@/components/CoreTechnologies";
 
-export default function Contact() {
+export default function Technologies() {
   return (
     <AppLayout>
       <div className="pt-8">
-        <ContactSection />
+        <CoreTechnologies />
       </div>
     </AppLayout>
   );

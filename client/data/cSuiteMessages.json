@@ -1,0 +1,22 @@
+{
+  "PreritRoshan": {
+    "name": "Prerit Roshan",
+    "role": "CEO & CTO",
+    "message": "At Elysium Aerotech, we're reimagining the future of autonomous flight. As both CEO and CTO, I'm deeply committed to bridging the gap between cutting-edge research and real-world aerospace applications. Our mission is to create systems that don't just fly autonomously—they think, adapt, and evolve. Every innovation we develop is guided by our motto: Precision Over Boundaries. We believe the future of aviation lies in intelligent, autonomous systems that operate with unwavering safety and reliability. Together, we're not just building aircraft; we're building the future."
+  },
+  "RaghavJindal": {
+    "name": "Raghav Jindal",
+    "role": "CFO & COO",
+    "message": "Operational excellence and financial sustainability are the cornerstones of Elysium Aerotech's growth strategy. As CFO and COO, I oversee the strategic execution of our vision while ensuring every decision aligns with our core values. We're building a company that not only innovates at the highest level but operates with precision and accountability. Our focus is on scalable growth, responsible resource management, and creating lasting partnerships that accelerate aerospace innovation. Success is measured not just in numbers, but in the impact we create for our partners and the industry."
+  },
+  "DevGarg": {
+    "name": "Dev Garg",
+    "role": "CIO",
+    "message": "Technology infrastructure is the backbone of autonomous systems. As CIO, I ensure that our IT architecture supports our ambitious technical roadmap while maintaining the highest standards of security and reliability. We're leveraging the latest advancements in cloud computing, AI, and cybersecurity to create systems that are not only powerful but impenetrable. Our technology stack is designed for scalability, ensuring that as we grow, our systems evolve seamlessly. Innovation in technology is about creating possibilities; we're here to turn those possibilities into reality."
+  },
+  "NeelrishamSingh": {
+    "name": "Neelrisham Singh",
+    "role": "CHRO",
+    "message": "At Elysium Aerotech, our people are our greatest asset. As Chief Human Resources Officer, I'm committed to fostering a culture of innovation, excellence, and continuous learning. We attract world-class talent who are passionate about pushing boundaries and solving the most challenging problems in aerospace technology. We invest in our team's development, create an inclusive environment, and build a community where brilliant minds collaborate to shape the future. Our success is directly tied to the growth and well-being of our people."
+  }
+}

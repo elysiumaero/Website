@@ -1,52 +1,49 @@
+import "./global.css";
+
 import { Toaster } from "@/components/ui/toaster";
+import { createRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { PreloaderProvider } from "@/contexts/PreloaderContext";
+import { Preloader } from "@/components/Preloader";
 import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import SiteLayout from "./components/layout/SiteLayout";
 import About from "./pages/About";
-import Technology from "./pages/Technology";
-import Contact from "./pages/Contact";
+import Technologies from "./pages/Technologies";
+import Systems from "./pages/Systems";
+import RnDLab from "./pages/RnDLab";
+import Academic from "./pages/Academic";
 import Team from "./pages/Team";
-import Collaborators from "./pages/Collaborators";
-import ElysiumProject from "./pages/ElysiumProject";
-import Achievements from "./pages/Achievements";
-import FAQ from "./pages/FAQ";
-import Blog from "./pages/Blog";
-import Gallery from "./pages/Gallery";
-import Careers from "./pages/Careers";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<SiteLayout />}>
-            <Route index element={<Index />} />
-            <Route path="about" element={<About />} />
-            <Route path="technology" element={<Technology />} />
-            <Route path="team" element={<Team />} />
-            <Route path="collaborators" element={<Collaborators />} />
-            <Route path="elysium" element={<ElysiumProject />} />
-            <Route path="achievements" element={<Achievements />} />
-            <Route path="faq" element={<FAQ />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="careers" element={<Careers />} />
-            <Route path="contact" element={<Contact />} />
+  <PreloaderProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Preloader />
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/technologies" element={<Technologies />} />
+            <Route path="/systems" element={<Systems />} />
+            <Route path="/rnd-lab" element={<RnDLab />} />
+            <Route path="/academic" element={<Academic />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </PreloaderProvider>
 );
 
-export default App;
+createRoot(document.getElementById("root")!).render(<App />);

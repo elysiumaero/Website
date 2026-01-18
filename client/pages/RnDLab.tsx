@@ -1,11 +1,11 @@
 import { AppLayout } from "@/layouts/AppLayout";
-import { ContactSection } from "@/components/ContactSection";
+import { RnDLabSection } from "@/components/RnDLabSection";
 
-export default function Contact() {
+export default function RnDLab() {
   return (
     <AppLayout>
       <div className="pt-8">
-        <ContactSection />
+        <RnDLabSection />
       </div>
     </AppLayout>
   );
