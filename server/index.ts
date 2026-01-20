@@ -19,5 +19,12 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // SPA fallback: For all other routes, pass to next middleware (Vite)
+  // This middleware runs after all specific routes are checked
+  app.use((_req, _res, next) => {
+    // Pass control to the next middleware (Vite's SPA handler)
+    next();
+  });
+
   return app;
 }

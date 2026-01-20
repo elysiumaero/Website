@@ -73,7 +73,11 @@ export const Preloader: React.FC = () => {
       <div className="relative z-10 w-full max-w-2xl px-8">
         <div className="font-mono text-sm text-[#00d9ff] leading-relaxed space-y-0">
           {displayedLines.map((line, index) => (
-            <div key={index} className="h-5">
+            <div
+              key={index}
+              className="h-5"
+              data-easter-motto={line.includes("Precision Over Boundaries") ? "true" : undefined}
+            >
               {line}
             </div>
           ))}

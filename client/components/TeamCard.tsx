@@ -1,22 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useTeamImages } from "@/hooks/useTeamImages";
 
 interface TeamCardProps {
   name: string;
   role: string;
   folderName: string;
-  onClick?: () => void;
+  memberId?: string;
 }
 
-export const TeamCard: React.FC<TeamCardProps> = ({ name, role, folderName, onClick }) => {
+export const TeamCard: React.FC<TeamCardProps> = ({ name, role, folderName, memberId }) => {
+  const navigate = useNavigate();
   const imagePath = useTeamImages(folderName);
+  const memberIdentifier = memberId || name.replace(/\s+/g, "");
+
+  const handleClick = () => {
+    navigate(`/team/${memberIdentifier}`);
+  };
 
   return (
-    <div
-      onClick={onClick}
-      className={`group relative overflow-hidden rounded-lg border border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 ${
-        onClick ? "cursor-pointer" : ""
-      }`}
+    <button
+      onClick={handleClick}
+      className="group relative overflow-hidden rounded-lg border border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 text-left w-full cursor-pointer"
     >
       {/* Image container */}
       <div className="relative h-64 bg-gradient-to-b from-primary/20 to-background overflow-hidden">
@@ -54,6 +59,6 @@ export const TeamCard: React.FC<TeamCardProps> = ({ name, role, folderName, onCl
 
       {/* Glow effect */}
       <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-transparent rounded-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300 blur-xl -z-10" />
-    </div>
+    </button>
   );
 };

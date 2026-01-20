@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
@@ -22,24 +21,24 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link to="/technologies" className="hover:text-primary transition-colors">
+                <a href="#technologies" className="hover:text-primary transition-colors">
                   Technologies
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/rnd-lab" className="hover:text-primary transition-colors">
+                <a href="#rnd-lab" className="hover:text-primary transition-colors">
                   Research & Development
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/team" className="hover:text-primary transition-colors">
+                <a href="#team" className="hover:text-primary transition-colors">
                   Our Team
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-primary transition-colors">
+                <a href="#contact" className="hover:text-primary transition-colors">
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

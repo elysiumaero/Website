@@ -24,6 +24,7 @@ export const RnDTeamPanel: React.FC = () => {
               name={member.name}
               role={member.role}
               folderName={member.folderName}
+              memberId={member.name.replace(/\s+/g, "")}
             />
           ))}
         </div>
@@ -39,6 +40,7 @@ export const RnDTeamPanel: React.FC = () => {
               name={member.name}
               role={member.role}
               folderName={member.folderName}
+              memberId={member.name.replace(/\s+/g, "")}
             />
           ))}
         </div>

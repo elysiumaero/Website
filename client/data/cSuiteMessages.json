@@ -1,22 +1,37 @@
 {
   "PreritRoshan": {
+    "id": "PreritRoshan",
     "name": "Prerit Roshan",
     "role": "CEO & CTO",
-    "message": "At Elysium Aerotech, we're reimagining the future of autonomous flight. As both CEO and CTO, I'm deeply committed to bridging the gap between cutting-edge research and real-world aerospace applications. Our mission is to create systems that don't just fly autonomously—they think, adapt, and evolve. Every innovation we develop is guided by our motto: Precision Over Boundaries. We believe the future of aviation lies in intelligent, autonomous systems that operate with unwavering safety and reliability. Together, we're not just building aircraft; we're building the future."
+    "message": "At Elysium Aerotech, we are engineering the next evolution of intelligent aviation. Our mission goes beyond building autonomous systems — we are redefining how aerial platforms think, adapt, and perform. By integrating advanced AI, precision engineering, and future-ready design philosophies, we aim to create systems that are not only smarter and safer, but fundamentally transformative. Every innovation we develop reflects our commitment to excellence, technological leadership, and advancing human capability through autonomous flight.",
+    "bio": "Visionary technologist driving innovation at the intersection of aerospace and intelligence systems.",
+    "expertise": "Autonomous Systems Architecture, Artificial Intelligence Integration, Advanced Systems Design"
   },
+
   "RaghavJindal": {
+    "id": "RaghavJindal",
     "name": "Raghav Jindal",
     "role": "CFO & COO",
-    "message": "Operational excellence and financial sustainability are the cornerstones of Elysium Aerotech's growth strategy. As CFO and COO, I oversee the strategic execution of our vision while ensuring every decision aligns with our core values. We're building a company that not only innovates at the highest level but operates with precision and accountability. Our focus is on scalable growth, responsible resource management, and creating lasting partnerships that accelerate aerospace innovation. Success is measured not just in numbers, but in the impact we create for our partners and the industry."
+    "message": "Operational excellence and financial discipline form the backbone of Elysium Aerotech’s growth. Our approach focuses on building scalable systems, ensuring fiscal responsibility, and enabling sustainable expansion without compromising innovation. By aligning strategic planning with execution excellence, we create a foundation that allows bold ideas to thrive while maintaining long-term stability and investor confidence.",
+    "bio": "Strategic and operational leader driving sustainable growth and execution excellence.",
+    "expertise": "Operations Management, Strategic Planning, Financial Leadership"
   },
+
   "DevGarg": {
+    "id": "DevGarg",
     "name": "Dev Garg",
     "role": "CIO",
-    "message": "Technology infrastructure is the backbone of autonomous systems. As CIO, I ensure that our IT architecture supports our ambitious technical roadmap while maintaining the highest standards of security and reliability. We're leveraging the latest advancements in cloud computing, AI, and cybersecurity to create systems that are not only powerful but impenetrable. Our technology stack is designed for scalability, ensuring that as we grow, our systems evolve seamlessly. Innovation in technology is about creating possibilities; we're here to turn those possibilities into reality."
+    "message": "In a world driven by data and connectivity, resilience and security define success. At Elysium Aerotech, our digital infrastructure is built with enterprise-grade architecture, redundancy, and security at its core. From cloud-native systems to distributed computing frameworks, every layer is designed for reliability, scalability, and protection. Our commitment ensures that every operation, every dataset, and every mission remains secure and dependable.",
+    "bio": "Technology leader focused on secure, scalable, and resilient digital infrastructure.",
+    "expertise": "Information Security, Cloud Architecture, Infrastructure Engineering"
   },
+
   "NeelrishamSingh": {
+    "id": "NeelrishamSingh",
     "name": "Neelrisham Singh",
     "role": "CHRO",
-    "message": "At Elysium Aerotech, our people are our greatest asset. As Chief Human Resources Officer, I'm committed to fostering a culture of innovation, excellence, and continuous learning. We attract world-class talent who are passionate about pushing boundaries and solving the most challenging problems in aerospace technology. We invest in our team's development, create an inclusive environment, and build a community where brilliant minds collaborate to shape the future. Our success is directly tied to the growth and well-being of our people."
+    "message": "People are the driving force behind innovation. At Elysium Aerotech, we cultivate a culture built on learning, ownership, and excellence. By empowering individuals and fostering collaboration across disciplines, we create teams capable of solving complex challenges in autonomous aviation. Our focus is not just on building technology, but on building the people who shape the future of aerospace.",
+    "bio": "People-first leader shaping culture, talent, and organizational excellence.",
+    "expertise": "Talent Development, Organizational Culture, Human Capital Strategy"
   }
 }

@@ -1,0 +1,112 @@
+{
+  "cSuite": [
+    {
+      "id": "PreritRoshan",
+      "name": "Prerit Roshan",
+      "role": "CEO & CTO",
+      "folderName": "PreritRoshan",
+      "bio": "Co-founder and visionary leader with expertise in autonomous systems architecture",
+      "expertise": ["Autonomous Systems", "AI Integration", "Systems Design"]
+    },
+    {
+      "id": "RaghavJindal",
+      "name": "Raghav Jindal",
+      "role": "CFO & COO",
+      "folderName": "RaghavJindal",
+      "bio": "Operational strategist ensuring sustainable growth and efficiency",
+      "expertise": ["Operations Management", "Strategic Planning", "Financial Leadership"]
+    },
+    {
+      "id": "DevGarg",
+      "name": "Dev Garg",
+      "role": "CIO",
+      "folderName": "DevGarg",
+      "bio": "Technology infrastructure leader ensuring security and reliability",
+      "expertise": ["Information Security", "Cloud Architecture", "Infrastructure Design"]
+    },
+    {
+      "id": "NeelrishamSingh",
+      "name": "Neelrisham Singh",
+      "role": "CHRO",
+      "folderName": "NeelrishamSingh",
+      "bio": "People-centric leader building high-performing teams",
+      "expertise": ["Talent Development", "Organizational Culture", "Human Capital Strategy"]
+    }
+  ],
+  "rndDepartment": {
+    "supervisor": {
+      "id": "Abdullah",
+      "name": "Abdullah",
+      "role": "Supervisor",
+      "folderName": "Abdullah",
+      "bio": "Research division supervisor overseeing strategic R&D initiatives",
+      "expertise": ["Research Leadership", "Innovation Strategy", "Technical Mentorship"]
+    },
+    "coSupervisor": {
+      "id": "Sanvi",
+      "name": "Sanvi",
+      "role": "Co-Supervisor",
+      "folderName": "Sanvi",
+      "bio": "Co-supervisor driving research excellence and technical innovation",
+      "expertise": ["Technical Innovation", "Research Development", "System Integration"]
+    },
+    "members": [
+      {
+        "id": "Vishwas",
+        "name": "Vishwas",
+        "role": "R&D Lead",
+        "folderName": "Vishwas",
+        "bio": "Lead engineer coordinating autonomous flight development",
+        "expertise": ["Autonomous Flight", "Navigation Systems", "Engineering Leadership"]
+      },
+      {
+        "id": "Vivaan",
+        "name": "Vivaan",
+        "role": "Co R&D Lead",
+        "folderName": "Vivaan",
+        "bio": "Co-lead managing sensor fusion and data integration",
+        "expertise": ["Sensor Fusion", "Data Integration", "System Architecture"]
+      },
+      {
+        "id": "Sparsh",
+        "name": "Sparsh",
+        "role": "R&D Executive",
+        "folderName": "Sparsh",
+        "bio": "R&D executive specializing in communication protocols",
+        "expertise": ["Communication Systems", "Protocol Design", "Network Security"]
+      },
+      {
+        "id": "Palak",
+        "name": "Palak",
+        "role": "R&D Executive",
+        "folderName": "Palak",
+        "bio": "R&D executive focused on AI and machine learning integration",
+        "expertise": ["Machine Learning", "AI Integration", "Data Analytics"]
+      },
+      {
+        "id": "Riya",
+        "name": "Riya",
+        "role": "R&D Executive",
+        "folderName": "Riya",
+        "bio": "R&D executive specializing in threat detection systems",
+        "expertise": ["Threat Detection", "Computer Vision", "Pattern Recognition"]
+      },
+      {
+        "id": "Garv",
+        "name": "Garv",
+        "role": "R&D Executive",
+        "folderName": "Garv",
+        "bio": "R&D executive working on redundancy and fail-safe mechanisms",
+        "expertise": ["System Redundancy", "Fail-Safe Design", "Reliability Engineering"]
+      },
+      {
+        "id": "Hazel",
+        "name": "Hazel",
+        "role": "R&D Executive",
+        "folderName": "Hazel",
+        "bio": "R&D executive handling security protocols and encryption",
+        "expertise": ["Cryptography", "Security Protocols", "System Hardening"]
+      }
+    ]
+  }
+}

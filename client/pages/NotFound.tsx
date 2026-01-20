@@ -1,10 +1,11 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { AppLayout } from "@/layouts/AppLayout";
 import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.error(
@@ -30,13 +31,13 @@ const NotFound = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              onClick={() => (window.location.href = "/")}
+              onClick={() => navigate("/")}
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-lg font-semibold rounded-lg transition-all"
             >
               Return to Base
             </Button>
             <Button
-              onClick={() => document.getElementById("technologies")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => navigate("/technologies")}
               variant="outline"
               className="px-8 py-3 text-lg font-semibold rounded-lg border-primary text-primary hover:bg-primary/10"
             >

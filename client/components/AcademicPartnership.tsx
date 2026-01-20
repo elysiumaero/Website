@@ -97,12 +97,12 @@ export const AcademicPartnership: React.FC = () => {
               Are you a student, researcher, or faculty member interested in collaborating with Elysium Aerotech? We
               welcome partnerships that advance aerospace technology and autonomous systems research.
             </p>
-            <button
-              onClick={() => window.location.href = "/contact"}
-              className="inline-block px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors cursor-pointer"
+            <a
+              href="#contact"
+              className="inline-block px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
             >
               Explore Partnership Opportunities
-            </button>
+            </a>
           </div>
         </div>
       </div>
