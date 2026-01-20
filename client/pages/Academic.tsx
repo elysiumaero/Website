@@ -12,7 +12,7 @@ export default function Academic() {
       location: "Delhi, India",
       logo: "🎓",
       description:
-        "Vishveshwaranand Institute of Professional Studies - Technological Campus is a leading institution for research and innovation in autonomous systems, robotics, and embedded systems.",
+        "Vivekananda Institute of Professional Studies - Technological Campus is a leading institution for research and innovation in autonomous systems, robotics, and embedded systems.",
       focus: ["Autonomous Robotics", "Embedded Systems", "AI & Machine Learning", "Sensor Technology"],
       collaboration:
         "Joint research initiatives in autonomous flight systems, sensor fusion, and AI-powered decision making. Regular exchange of researchers and students.",
