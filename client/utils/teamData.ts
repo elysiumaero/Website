@@ -20,11 +20,6 @@ export const cSuiteMembers: TeamMember[] = [
     role: "CIO",
     folderName: "DevGarg",
   },
-  {
-    name: "Ishita Mogha",
-    role: "CSO & CHRO",
-    folderName: "IshitaMogha",
-  },
 ];
 
 export const rndTeamMembers: TeamMember[] = [

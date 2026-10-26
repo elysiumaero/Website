@@ -24,14 +24,5 @@
     "message": "In a world driven by data and connectivity, resilience and security define success. At Elysium Aerotech, our digital infrastructure is built with enterprise-grade architecture, redundancy, and security at its core. From cloud-native systems to distributed computing frameworks, every layer is designed for reliability, scalability, and protection. Our commitment ensures that every operation, every dataset, and every mission remains secure and dependable.",
     "bio": "Technology leader focused on secure, scalable, and resilient digital infrastructure.",
     "expertise": "Information Security, Cloud Architecture, Infrastructure Engineering"
-  },
-
-  "IshitaMogha": {
-    "id": "IshitaMogha",
-    "name": "Ishita Mogha",
-    "role": "CSO & CHRO",
-    "message": "People are the driving force behind innovation. At Elysium Aerotech, we cultivate a culture built on learning, ownership, and excellence. By empowering individuals and fostering collaboration across disciplines, we create teams capable of solving complex challenges in autonomous aviation. Our focus is not just on building technology, but on building the people who shape the future of aerospace.",
-    "bio": "People-first leader shaping culture, talent, and organizational excellence.",
-    "expertise": "Talent Development, Organizational Culture, Human Capital Strategy"
   }
 }

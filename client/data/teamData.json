@@ -23,14 +23,6 @@
       "folderName": "DevGarg",
       "bio": "Technology infrastructure leader ensuring security and reliability",
       "expertise": ["Information Security", "Cloud Architecture", "Infrastructure Design"]
-    },
-    {
-      "id": "IshitaMogha",
-      "name": "Ishita Mogha",
-      "role": "CSO & CHRO",
-      "folderName": "IshitaMogha",
-      "bio": "People-centric leader building high-performing teams",
-      "expertise": ["Talent Development", "Organizational Culture", "Human Capital Strategy"]
     }
   ],
   "rndDepartment": {
