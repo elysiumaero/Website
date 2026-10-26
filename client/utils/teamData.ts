@@ -21,9 +21,9 @@ export const cSuiteMembers: TeamMember[] = [
     folderName: "DevGarg",
   },
   {
-    name: "Neelrisham Singh",
-    role: "CHRO",
-    folderName: "NeelrishamSingh",
+    name: "Ishita Mogha",
+    role: "CSO & CHRO",
+    folderName: "IshitaMogha",
   },
 ];
 
